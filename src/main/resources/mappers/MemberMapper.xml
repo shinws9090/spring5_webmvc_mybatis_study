@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="spring5_webmvc_mybatis_study.mapper.MemberMapper">
+
+	<resultMap type="Member" id="ResMember">
+		<id property="id" column="id" />
+		<result property="email" column="email" />
+		<result property="name" column="name" />
+		<result property="password" column="password" />
+		<result property="registerDateTime" column="regdate" />
+	</resultMap>
+	
+	<insert id="insert">
+		insert into member (email,password,name,regdate)
+		values(#{email},#{password},#{name},#{registerDateTime})
+
+	</insert>
+
+	<select id="selectByEmail" resultMap="ResMember">
+		select ID,EMAIL,PASSWORD,NAME,REGDATE from member
+		where email = #{email}
+
+	</select>
+	
+	<update id="update">
+		update member
+		set PASSWORD= #{password}
+		where email = #{email}
+	</update>
+	
+	<select id="selectByRegdate" resultMap="ResMember">
+		select * from member where regdate between #{from} and #{to} order by regdate desc;
+	</select>
+	
+	<select id="selectById" resultMap="ResMember">
+		select * from member where id = #{id}
+	</select>
+	<select id="selectAll" resultMap="ResMember">
+		select * from member
+	</select>
+
+	
+</mapper>

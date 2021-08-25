@@ -1,0 +1,75 @@
+[DEBUG] [2021-05-21 18:24] testDataSource()
+[DEBUG] [2021-05-21 18:24] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-21 18:24] LoginTimeout 30
+[DEBUG] [2021-05-21 18:24] testOpenSession()
+[DEBUG] [2021-05-21 18:24] session org.apache.ibatis.session.defaults.DefaultSqlSession@2a8d39c4
+[DEBUG] [2021-05-21 18:47] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 18:47] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 18:47] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 18:47] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 18:49] ==>  Preparing: insert into member (email,password,name,regdate) values(?,?,?,?)
+[DEBUG] [2021-05-21 18:49] ==> Parameters: sadsad(String), sdfsdf(String), sdjhfskd(String), 2021-05-21T18:49:11.759(LocalDateTime)
+[DEBUG] [2021-05-21 18:49] <==    Updates: 1
+[DEBUG] [2021-05-21 18:49] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 18:49] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 18:49] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 18:49] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 19:34] ==>  Preparing: insert into member (email,password,name,regdate) values(?,?,?,?)
+[DEBUG] [2021-05-21 19:34] ==> Parameters: sadsad(String), sdfsdf(String), sdjhfskd(String), 2021-05-21T19:34:23.013(LocalDateTime)
+[DEBUG] [2021-05-21 19:34] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 19:34] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 19:34] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 19:34] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 19:47] ==>  Preparing: insert into member (email,password,name,regdate) values(?,?,?,?)
+[DEBUG] [2021-05-21 19:47] ==> Parameters: sadsad(String), sdfsdf(String), sdjhfskd(String), 2021-05-21T19:47:57.849(LocalDateTime)
+[DEBUG] [2021-05-21 19:47] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 19:47] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 19:47] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 19:47] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:29] ==>  Preparing: insert into member (email,password,name,regdate) values(?,?,?,?)
+[DEBUG] [2021-05-21 20:29] ==> Parameters: sadsad(String), sdfsdf(String), sdjhfskd(String), 2021-05-21T20:29:09.677(LocalDateTime)
+[DEBUG] [2021-05-21 20:29] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 20:29] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 20:29] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:29] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:31] ==>  Preparing: insert into member (email,password,name,regdate) values(?,?,?,?)
+[DEBUG] [2021-05-21 20:31] ==> Parameters: sadsad(String), sdfsdf(String), sdjhfskd(String), 2021-05-21T20:31:32.966(LocalDateTime)
+[DEBUG] [2021-05-21 20:31] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 20:31] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 20:31] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:31] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:31] ==>  Preparing: select * from member where email = ?
+[DEBUG] [2021-05-21 20:31] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 20:31] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:31] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:35] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:35] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 20:35] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:35] <==        Row: 10, shinws9090@naver.com, null, 신범건, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:36] testDataSource()
+[DEBUG] [2021-05-21 20:36] DataSource HikariDataSource (springHikariCP)
+[DEBUG] [2021-05-21 20:36] LoginTimeout 30
+[DEBUG] [2021-05-21 20:36] testOpenSession()
+[DEBUG] [2021-05-21 20:36] session org.apache.ibatis.session.defaults.DefaultSqlSession@6b0cb73f
+[DEBUG] [2021-05-21 20:36] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:36] ==> Parameters: shinws9090@naver.com(String)
+[TRACE] [2021-05-21 20:36] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:36] <==        Row: 10, shinws9090@naver.com, null, �Ź���, 2021-05-20 11:11:59.0
+[DEBUG] [2021-05-21 20:37] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:37] ==> Parameters: test@test.co.kr(String)
+[TRACE] [2021-05-21 20:37] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:37] <==        Row: 1, test@test.co.kr, 0x1.7f55be552da41p-1, test, 2021-05-17 11:48:33.0
+[DEBUG] [2021-05-21 20:37] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:37] ==> Parameters: test@test.co.kr(String)
+[TRACE] [2021-05-21 20:37] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:37] <==        Row: 1, test@test.co.kr, 0x1.7f55be552da41p-1, test, 2021-05-17 11:48:33.0
+[DEBUG] [2021-05-21 20:39] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:39] ==> Parameters: test@test.co.kr(String)
+[TRACE] [2021-05-21 20:39] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:39] <==        Row: 1, test@test.co.kr, 0x1.7f55be552da41p-1, test, 2021-05-17 11:48:33.0
+[DEBUG] [2021-05-21 20:39] <==      Total: 1
+[DEBUG] [2021-05-21 20:40] ==>  Preparing: select ID,EMAIL,PASSWORD,NAME,REGDATE from member where email = ?
+[DEBUG] [2021-05-21 20:40] ==> Parameters: test@test.co.kr(String)
+[TRACE] [2021-05-21 20:40] <==    Columns: ID, EMAIL, PASSWORD, NAME, REGDATE
+[TRACE] [2021-05-21 20:40] <==        Row: 1, test@test.co.kr, 0x1.7f55be552da41p-1, test, 2021-05-17 11:48:33.0
+[DEBUG] [2021-05-21 20:40] <==      Total: 1
